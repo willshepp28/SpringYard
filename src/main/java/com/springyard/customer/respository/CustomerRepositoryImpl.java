@@ -22,7 +22,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
 
 
     // create
-    private final String INSERT_SQL = "INSERT INTO customer (firstName, lastName, phone, email) VALUES (?,?)";
+    private final String INSERT_SQL = "INSERT INTO customer (firstName, lastName, phone, email) VALUES (?,?,?,?)";
     @Override
     public void add(Customer customer) {
         jdbcTemplate.update(INSERT_SQL, customer.getFirstName(), customer.getLastName(), customer.getPhone(), customer.getEmail());

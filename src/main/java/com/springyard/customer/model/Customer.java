@@ -13,9 +13,6 @@ public class Customer {
          private String email;
 
 
-
-
-
     // constructor
     public Customer() {
     }
